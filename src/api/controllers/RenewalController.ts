@@ -62,6 +62,7 @@ export class RenewalController {
         });
       }
     } catch (error: any) {
+      console.error('RenewalController error:', error);
       res.status(500).json({
         success: false,
         message: 'Internal server error',
